@@ -1,0 +1,14 @@
+D:\Kouluhommat\windowsohjelmointi\assignment4\obj\Debug\net6.0\assignment4.GeneratedMSBuildEditorConfig.editorconfig
+D:\Kouluhommat\windowsohjelmointi\assignment4\obj\Debug\net6.0\assignment4.AssemblyInfoInputs.cache
+D:\Kouluhommat\windowsohjelmointi\assignment4\obj\Debug\net6.0\assignment4.AssemblyInfo.cs
+D:\Kouluhommat\windowsohjelmointi\assignment4\obj\Debug\net6.0\assignment4.csproj.CoreCompileInputs.cache
+D:\Kouluhommat\windowsohjelmointi\assignment4\bin\Debug\net6.0\assignment4.exe
+D:\Kouluhommat\windowsohjelmointi\assignment4\bin\Debug\net6.0\assignment4.deps.json
+D:\Kouluhommat\windowsohjelmointi\assignment4\bin\Debug\net6.0\assignment4.runtimeconfig.json
+D:\Kouluhommat\windowsohjelmointi\assignment4\bin\Debug\net6.0\assignment4.dll
+D:\Kouluhommat\windowsohjelmointi\assignment4\bin\Debug\net6.0\assignment4.pdb
+D:\Kouluhommat\windowsohjelmointi\assignment4\obj\Debug\net6.0\assignment4.dll
+D:\Kouluhommat\windowsohjelmointi\assignment4\obj\Debug\net6.0\refint\assignment4.dll
+D:\Kouluhommat\windowsohjelmointi\assignment4\obj\Debug\net6.0\assignment4.pdb
+D:\Kouluhommat\windowsohjelmointi\assignment4\obj\Debug\net6.0\assignment4.genruntimeconfig.cache
+D:\Kouluhommat\windowsohjelmointi\assignment4\obj\Debug\net6.0\ref\assignment4.dll
