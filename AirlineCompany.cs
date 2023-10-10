@@ -22,7 +22,7 @@ namespace assignment4
         public Flight this[int index]
         {
             get { return flights[index]; }  // use Values to access the flight objects
-            set { flights[flights.Keys[index]] = value; }
+            set { flights[flights.Keys[index]] = value; } //flights.Insert(index, value); does not work. maybe because of sorted list
         }
 
         public void AddFlight(Flight flight)
@@ -84,7 +84,7 @@ namespace assignment4
         {
             foreach (var flight in flights.Values)
             {
-                Console.WriteLine($"Flight ID: {flight.Id}, Origin: {flight.Origin}, Destination: {flight.Destination}, Date: {flight.Date.ToShortDateString()}, Price: {flight.Price:C}");
+                Console.WriteLine($"Flight ID: {flight.Id}, Origin: {flight.Origin}, Destination: {flight.Destination}, Date: {flight.Date}, Price: {flight.Price}£");
             }
         }
     }

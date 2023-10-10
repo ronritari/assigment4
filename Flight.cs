@@ -11,10 +11,10 @@ namespace assignment4
         public int Id { get; set; }
         public string Origin { get; set; }
         public string Destination { get; set; }
-        public DateTime Date { get; set; }
+        public string Date { get; set; }
         public double Price { get; set; }
 
-        public Flight(int id, string origin, string destination, DateTime date, double price)
+        public Flight(int id, string origin, string destination, string date, double price)
         {
             Id = id;
             Origin = origin;
