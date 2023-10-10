@@ -6,12 +6,9 @@ namespace assignment4
 {
     class Program
     {
-
-
         static void Main()
         {
-            AirlineCompany airline = new AirlineCompany();
-            //Flight flight = new Flight();
+            AirlineCompany airline = new AirlineCompany("Finnair");
 
             airline.AddFlight(new Flight(1, "New York", "Los Angeles", DateTime.Parse("2023-09-20"), 450.0));
             airline.AddFlight(new Flight(2, "Chicago", "Miami", DateTime.Parse("2023-09-22"), 300.0));
@@ -20,18 +17,21 @@ namespace assignment4
             Console.WriteLine("All Flights:");
             airline.DisplayFlights();
 
+            //finds flight with ID 2
             int flightIdToFind = 2;
             Flight foundFlight = airline.FindFlight(flightIdToFind);
+
+            //checks that the flight id is real
             if (foundFlight != null)
             {
                 Console.WriteLine($"\nFlight with ID {flightIdToFind} found: {foundFlight.Origin} to {foundFlight.Destination}");
             }
 
             Flight cheapestFlight = airline.GetCheapestFlight();
-            Console.WriteLine($"\nCheapest Flight: {cheapestFlight.Origin} to {cheapestFlight.Destination}, Price: {cheapestFlight.Price}£");
+            Console.WriteLine($"\nCheapest Flight: {cheapestFlight.Origin} to {cheapestFlight.Destination}, Price: {cheapestFlight.Price:C}");
 
             Flight mostExpensiveFlight = airline.GetMostExpensiveFlight();
-            Console.WriteLine($"\nMost Expensive Flight: {mostExpensiveFlight.Origin} to {mostExpensiveFlight.Destination}, Price: {mostExpensiveFlight.Price}£");
+            Console.WriteLine($"\nMost Expensive Flight: {mostExpensiveFlight.Origin} to {mostExpensiveFlight.Destination}, Price: {mostExpensiveFlight.Price:C}");
         }
     }
 }

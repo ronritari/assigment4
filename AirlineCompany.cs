@@ -8,49 +8,50 @@ namespace assignment4
 {
     class AirlineCompany
     {
-        public string AirlineName { get; }
-        private List<Flight> flights = new List<Flight>();
+        
+
+        private SortedList<int, Flight> flights = new SortedList<int, Flight>(); //sorted list that needs key(int) and object flight
+
+        private string AirlineName { get; }
 
         public AirlineCompany(string airlineName)
         {
             AirlineName = airlineName;
         }
 
-        public AirlineCompany()
-        {
-        }
-
         public Flight this[int index]
         {
-            get { return flights[index]; }
-            set { flights[index] = value; }
+            get { return flights[index]; }  // use Values to access the flight objects
+            set { flights[flights.Keys[index]] = value; }
         }
 
         public void AddFlight(Flight flight)
         {
-            flights.Add(flight);
+            flights.Add(flight.Id, flight); // use the flights ID as the key
         }
 
-        public Flight FindFlight(int flightId)
+        public Flight FindFlight(int flightId) //finds the key of the list with the flight id
         {
-            foreach (Flight flight in flights)
+            if (flights.ContainsKey(flightId))
             {
-                if (flight.Id == flightId)
-                {
-                    return flight;
-                }
+                return flights[flightId];
             }
+
             return null;
         }
 
-
+        
         public Flight GetCheapestFlight()
         {
-            Flight cheapestFlight = null;
-            double minPrice = double.MaxValue;
+            //initialize cheapest flight with first object
+            Flight cheapestFlight = flights.Values[0];
+            //set lits first object as the lowest price
+            double minPrice = flights.Values[0].Price;
 
-            foreach (Flight flight in flights)
+
+            foreach (var flight in flights.Values)
             {
+                //replace lowest if this flight is lower price
                 if (flight.Price < minPrice)
                 {
                     minPrice = flight.Price;
@@ -59,15 +60,15 @@ namespace assignment4
             }
 
             return cheapestFlight;
-
         }
 
         public Flight GetMostExpensiveFlight()
         {
-            Flight mostExpensiveFlight = null;
-            double maxPrice = double.MinValue;
+            Flight mostExpensiveFlight = flights.Values[0];
 
-            foreach (Flight flight in flights)
+            double maxPrice = flights.Values[0].Price;
+
+            foreach (var flight in flights.Values)
             {
                 if (flight.Price > maxPrice)
                 {
@@ -81,9 +82,9 @@ namespace assignment4
 
         public void DisplayFlights()
         {
-            foreach (var flight in flights)
+            foreach (var flight in flights.Values)
             {
-                Console.WriteLine($"Flight ID: {flight.Id}, Origin: {flight.Origin}, Destination: {flight.Destination}, Date: {flight.Date.ToShortDateString()}, Price: {flight.Price}£");
+                Console.WriteLine($"Flight ID: {flight.Id}, Origin: {flight.Origin}, Destination: {flight.Destination}, Date: {flight.Date.ToShortDateString()}, Price: {flight.Price:C}");
             }
         }
     }

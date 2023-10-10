@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Kouluhommat\\windowsohjelmointi\\assignment4\\assignment4.csproj",
+      "projectUniqueName": "D:\\Kouluhommat\\windowsohjelmointi\\assignment4\\assigment4\\assignment4.csproj",
       "projectName": "assignment4",
-      "projectPath": "D:\\Kouluhommat\\windowsohjelmointi\\assignment4\\assignment4.csproj",
+      "projectPath": "D:\\Kouluhommat\\windowsohjelmointi\\assignment4\\assigment4\\assignment4.csproj",
       "packagesPath": "C:\\Users\\ronri\\.nuget\\packages\\",
-      "outputPath": "D:\\Kouluhommat\\windowsohjelmointi\\assignment4\\obj\\",
+      "outputPath": "D:\\Kouluhommat\\windowsohjelmointi\\assignment4\\assigment4\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

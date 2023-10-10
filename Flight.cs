@@ -22,9 +22,5 @@ namespace assignment4
             Date = date;
             Price = price;
         }
-
-        public Flight()
-        {
-        }
     }
 }
