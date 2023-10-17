@@ -22,7 +22,7 @@ namespace assignment4
         public Flight this[int index]
         {
             get { return flights[index]; }  // use Values to access the flight objects
-            set { flights[flights.Keys[index]] = value; } //flights.Insert(index, value); does not work. maybe because of sorted list
+            set { flights.Add(index, value); } //adds flight to the list
         }
 
         public void AddFlight(Flight flight)

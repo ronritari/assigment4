@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Kouluhommat\\windowsohjelmointi\\assignment4\\assigment4\\assignment4.csproj": {}
+    "C:\\Users\\ronri\\Desktop\\Kouluhommat\\windowsohjelmointi\\assigment4\\assignment4.csproj": {}
   },
   "projects": {
-    "D:\\Kouluhommat\\windowsohjelmointi\\assignment4\\assigment4\\assignment4.csproj": {
+    "C:\\Users\\ronri\\Desktop\\Kouluhommat\\windowsohjelmointi\\assigment4\\assignment4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Kouluhommat\\windowsohjelmointi\\assignment4\\assigment4\\assignment4.csproj",
+        "projectUniqueName": "C:\\Users\\ronri\\Desktop\\Kouluhommat\\windowsohjelmointi\\assigment4\\assignment4.csproj",
         "projectName": "assignment4",
-        "projectPath": "D:\\Kouluhommat\\windowsohjelmointi\\assignment4\\assigment4\\assignment4.csproj",
+        "projectPath": "C:\\Users\\ronri\\Desktop\\Kouluhommat\\windowsohjelmointi\\assigment4\\assignment4.csproj",
         "packagesPath": "C:\\Users\\ronri\\.nuget\\packages\\",
-        "outputPath": "D:\\Kouluhommat\\windowsohjelmointi\\assignment4\\assigment4\\obj\\",
+        "outputPath": "C:\\Users\\ronri\\Desktop\\Kouluhommat\\windowsohjelmointi\\assigment4\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
